@@ -1,13 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap');
+
+/* 
+font-family: 'Maven Pro', sans-serif;
+*/
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Maven Pro', sans-serif,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Navbar */
+
+.nav-logo a{
+  font-weight: 600;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #6B728E;
+
+}
+.nav-logo :hover{
+  color: black;
+  text-shadow: 3px 2px #F3E8FF;
+  transition: 500ms;
+}
+
+
+.nav-container{
+
+    display: grid;
+    grid-template-columns: 7rem auto;
+    column-gap: 42rem;
+  
+    padding: 1rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
+
+
+}
+
+
+.nav-links {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.nav-links li ,a{
+
+  list-style-type: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+ 
+}
+
+
+.nav-links :hover{
+  color: black;
+  text-shadow: 3px 2px #F3E8FF;
+}
+
+
+
+
+/* Introduction Container */
+
+.intro-container{
+  position: absolute;
+  left: 9%;
+  /* border: 1px solid black; */
+  width: 80vw;
+  margin-top: 2rem;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 44.5rem 26rem;
+}
+
+
+
+.intro-title{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #19376D;
+  letter-spacing: 2px;
+  padding: -2rem 1rem;
+}
+
+.tag-line{
+
+
+    color: #37306B;
+    font-size: x-large;
+    font-weight: 550;
+    letter-spacing: 1px;
+
+
+}
+
+.intro-para{
+ color: #146C94;
+  margin-top: 2rem;
+  letter-spacing: 0.2px;
+  line-height: 32px;
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 550;
+}
+
+
+/* About  */
+.about-container{
+  position: absolute;
+  top: 50rem;
+  /* border: 1px solid black; */
+ 
+  left: 9%;
+  width: 80vw;
+  margin-top: 2rem;
+  height: 85vh;
+  display: grid;
+
+  column-gap: 1rem;
+  grid-template-columns: 44.5rem 26rem;
+}
+
+
+
+.about-heading h2{
+  font-size: 50px;
+  font-weight: 600;
+  color: #262A56;
+}
+
+
+
+.about-para{
+  font-size: 17px;
+  font-weight: 500;
+  color: #146C94;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+}
+
+.about-img img{
+  width: 25rem;
+  position: relative;
+  left: 10%;
+  	top: 5%;
+ 
+  border-radius: 50%;
+
+
+}
+
+
+
+/* Skills */
+.skill-container{
+  position: absolute;
+  top: 90rem;
+   
+  left: 9%;
+  width: 80vw;
+  margin-top: 5rem;
+  height: 85vh;
+
+
+
+}
+
+
+.skill-heading{
+  font-size: 50px;
+  font-weight: 600;
+  color: #262A56;
+}
+
+
+.skill-card{
+ 
+
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-rows: auto 2rem;
+  width: 10rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 8px;
+  padding: 5px 1px;
+  margin: 5rem;
+
+box-shadow:   5px 4px 7px #B0DAFF;
+}
+
+.card-logo{
+  font-size: 5rem;
+}
+
+
+.skill-card:hover{
+  transform: scale(1.2);
+  transition: all .5s ease-in;
+}
+
+
+.card-title{
+  margin-top: 5px;
+  font-size: larger;
+  color: #146C94;
+  font-weight: 600;
+
+}
+.skill-card-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+}
+
+/* Projects Section */
+.project-container{
+  position: absolute;
+  top: 135rem;
+  
+  left: 9%;
+  width: 80vw;
+  margin-top: 5rem;
+  height: 85vh;
+  
+}
+
+.project-heading{
+  font-size: 50px;
+  font-weight: 600;
+  color: #262A56;
+}
+
+.project-card{
+  display: grid;
+  grid-template-columns: auto auto;
+  box-shadow: 0 0 5px 4px #B0DAFF;
+  column-gap: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.project-img img{
+  width: 35rem;
+  margin-top: 2.1rem;
+}
+
+.project-links{
+  position: relative;
+  font-size: 3rem;
+  right: 0rem;
+  margin-top: 1rem;
+ cursor: pointer;
+}
+
+.project-links :hover{
+  transform: scale(1.2);
+  transition: all .5s ease-in;
+  
+}
+
+.project-title{
+  color: #37306B;
+  font-size: 2.5rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.project-desc{
+  font-size: 17px;
+  font-weight: 500;
+  color: #146C94;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+
+
+/* Contact Section */
+.contact-container{
+
+  position: absolute;
+  top: 178rem;
+
+   
+  left: 9%;
+  width: 80vw;
+  margin-top: 5rem;
+  height: 85vh;
+
+
+}
+
+.contact-heading{
+  font-size: 50px;
+  font-weight: 600;
+  color: #262A56;
 }
