@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Projects = () => {
   return (
     <>
-      <div className="project-container">
+      <div className="project-container" id="projects">
         <h2 className="project-heading">Projects</h2>
         <div className="project-card">
           <div className="project-img">

@@ -176,7 +176,7 @@ code {
    
   left: 9%;
   width: 80vw;
-  margin-top: 5rem;
+  margin-top: 7rem;
   height: 85vh;
 
 
@@ -301,18 +301,155 @@ box-shadow:   5px 4px 7px #B0DAFF;
 
   position: absolute;
   top: 178rem;
-
+/* border: 1px solid black; */
+background-color: #ECF2FF;
+border-radius: 10px;
+box-shadow: 0 0 5px 4px #B0DAFF;
    
   left: 9%;
   width: 80vw;
-  margin-top: 5rem;
-  height: 85vh;
+  margin-top: 6rem;
+  height: 35rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  
 
 
+}
+
+.contact-card{
+  /* background-color: #6B728E; */
+  
+ 
+}
+
+.contact-subheading{
+  font-size: 1.5rem;
+}
+
+.contact-details{
+  padding-left: 1rem;
+  list-style-type: none ;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+}
+
+.contact-info{
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.contact-social-media{
+  margin-top: 2rem;
+  padding-left: 1rem;
+  list-style-type: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.contact-social-media-info{
+  font-size: 1.1rem;
+  font-weight: 300;
 }
 
 .contact-heading{
   font-size: 50px;
   font-weight: 600;
   color: #262A56;
+}
+
+.contact-subheading{
+  color: #19376D;
+}
+
+
+
+/* contact from */
+.contact-from{
+  margin-top:6rem;
+}
+
+.from-heading{
+  font-size: 1.5rem;
+  color: #19376D;
+}
+
+.from-details{
+  padding-left: 1rem;
+}
+.from-label{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.from-input{
+  padding:1rem 4rem;
+  margin-left: 6rem;
+  border: none;
+  border-bottom: 1px solid #B0DAFF;
+  
+}
+.from-input:focus{
+  box-shadow: 0px 0px 5px 2px #B0DAFF;
+  
+}
+
+#subtn{
+  padding: 1rem 5rem;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #B9E9FC;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+
+
+
+/* Footer Section */
+
+.footer-container{
+  position: absolute;
+  top: 220rem;
+  width: 75rem;
+  align-items: center;
+  height: 2rem;
+  justify-content: center;
+  
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: auto ;
+ padding: 0px 10rem;
+}
+
+.copyright-section{
+  color: #C9EEFF;
+  font-size: 1.2rem;
+}
+#react{
+  color: #97DEFF;
+  animation: rotation 3s infinite linear;
+
+}
+
+#heart{
+  animation: beat 0.5s infinite alternate;
+  color: red;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes beat{
+	to { transform: scale(1.2); }
 }

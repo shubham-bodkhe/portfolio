@@ -1,27 +1,28 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navabar = () => {
   return (
     <>
-      <div className="nav-container">
+      <div className="nav-container" id="navbar">
         <div className="nav-logo">
-          <a href="">
+          <Link to="#navbar">
             <h3> Shubham</h3>
-          </a>
+          </Link>
         </div>
         <div className="nav-links">
-          <a href="">
+          <Link to="#about" smooth>
             <li>About</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="#skills" smooth>
             <li> Skills</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="#projects" smooth>
             <li> Projects</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="#contact" smooth>
             <li>Contact</li>
-          </a>
+          </Link>
         </div>
       </div>
     </>
