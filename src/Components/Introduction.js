@@ -4,7 +4,7 @@ import dev from "../images/dev-logo.png";
 const Introduction = () => {
   return (
     <>
-      <div className="intro-container">
+      <div className="intro-container" id="intro">
         <div className="intro-logo">
           <img src={dev} alt="logo" />
         </div>
